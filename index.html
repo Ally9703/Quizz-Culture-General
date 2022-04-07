@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Question 1 CREATION DES INTERFACES ET DES BLOCS -->
+
+  <h1>Quizz Culture générale de la RDC !</h1>
+
+  <div class="container-global">
+
+    <form class="form-quizz">
+
+        <!-- PREMIER BLOC QUESTION -->
+          <div class="question-block">
+            <h4>Comment s'appelait la RDC de 1885 à 1908 ? </h4>
+            
+            <div>
+                <input type="radio" id="rdc" name="q1" value="a" checked>
+                <label for="rdc">République du congo</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="EIC" name="q1" value="b">
+                <label for="EIC">État indépendant du Congo (EIC)</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Bonaparte" name="q1" value="c">
+                <label for="Bonaparte">Congo belge</label>
+            </div>
+        </div>
+
+        <!-- DEUXIEME BLOC QUESTION -->
+        <div class="question-block">
+            <h4>Quel était l'ancienne appellation de Kinshasa la capital de la RDC ?</h4>
+            <div>
+                <input type="radio" id="capital" name="q2" value="a">
+                <label for="capital">Katanga</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="capital" name="q2" value="b" checked>
+                <label for="capital">Luluabourg</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="capital" name="q2" value="c">
+                <label for="capital">Léopoldville </label>
+            </div>
+        </div>
+
+        <!-- TROISIEME BLOC QUESTION -->
+        <div class="question-block">
+            <h4>Quelle est la superficie de la ville de Kinshasa ?</h4>
+            <div>
+                <input type="radio" id="superficie" name="q3" value="a">
+                <label for="superficie">7474km²</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="superficie" name="q3" value="b">
+                <label for="superficie">9965 km²</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="superficie" name="q3" value="c" checked>
+                <label for="superficie">1275 km²</label>
+            </div>
+        </div>
+
+        <!-- QUATRIEME BLOC QUESTION -->
+        <div class="question-block">
+            <h4>Qui est le père de l'indépendance de la RDC ?</h4>
+
+            <div>
+                <input type="radio" id="indépendance" name="q4" value="a" >
+                <label for="indépendance">Etienne Tshisekedi</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Be" name="q4" value="b" checked>
+                <label for="Belgrade">Jose Kasavubu</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="Bratislava" name="q4" value="c">
+                <label for="Bratislava">Patrice Lumumba</label>
+            </div>
+        </div>
+
+
+        <!-- CINQUIEME BLOC QUESTION -->
+        <div class="question-block">
+            <h4>Qui a découvert l'embouchure du fleuve Congo et quand ?</h4>
+            <div>
+                <input type="radio" id="m1" name="q5" value="a">
+                <label for="m1">Diego Cao </label>
+            </div>
+            
+            <div>
+                <input type="radio" id="m2" name="q5" value="b">
+                <label for="m2">Félix Tshisekedi</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="m3" name="q5" value="c" checked>
+                <label for="m3">Laurent Désiré Kabila</label>
+            </div>
+        </div>
+
+        <!-- BOUTON D'ENVOIE -->
+        <button type="submit">Validez vos choix !</button>
+        
+    </form>
+
+    <div class="resultats">
+      <h2>Cliquez sur valider pour voir les résultats.</h2>
+      <p class="aide"></p>
+      <p class="note"></p>
+    </div>
+  </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
